@@ -3,6 +3,23 @@ TEMPLATE = True
 
 SECRET_KEY = 'ox_dg)yv9u+u^rp3^=jw6!*nkvk==2j3cz5#nm(8zm*d&x9*n6'
 
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,  # This option is important for Django to look for templates in each app's 'templates' directory.
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -17,5 +34,7 @@ ROOT_URLCONF = 'madlibs.urls'
 
 INSTALLED_APPS = [
     # other installed apps...
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
     'madlibs',  # Add your app here
 ]

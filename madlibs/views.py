@@ -1,7 +1,7 @@
 # madlibs/views.py
 import datetime  # Import the datetime module
 from django.shortcuts import render
-from ..models import MadLib# Import your model
+from .models import MadLib# Import your model
 
 def madlib_list(request):
     madlibs = MadLib.objects.all()  # Replace with your logic to fetch Mad Libs
