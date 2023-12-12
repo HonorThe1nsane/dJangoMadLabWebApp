@@ -1,4 +1,22 @@
-<!-- DjangoMadLabWebApp/templates/madlib_detail.html -->
-<h1>Mad Lib Details</h1>
-<p>Mad Lib ID: {{ madlib_id }}</p>
-<!-- Add your HTML code to display details of the specific Mad Lib -->
+{% extends "base.html" %}
+
+{% block content %}
+<p>Fill in the Madlib blanks!</p>
+<form method="POST">
+    {% csrf_token %}
+    {% for element in form %}
+    <div class="form-item">
+        <label>{{ element.label }}:</label>
+        {{ element }}
+    </div>
+    {% endfor %}
+    <input type="submit" value="Submit" />
+</form>
+{% if story %}
+<h2>{{ madlib_name }}</h2>
+<p>{{ story }}</p>
+{% endif %}
+<ul>
+    <li><a href=".">Go back to {{ user }}'s madlibs</a></li>
+</ul>
+{% endblock content %}

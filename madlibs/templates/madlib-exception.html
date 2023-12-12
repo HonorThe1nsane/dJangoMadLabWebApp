@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Oops! There was a problem loading this page.</h1>
+<p>The computer didn't understand some part of the program it tried to run while displaying this page. The error was:
+</p>
+
+<h2>{{ error.type }}: {{ error.message }}</h2>
+{% endblock content %}

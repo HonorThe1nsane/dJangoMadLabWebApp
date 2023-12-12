@@ -1,0 +1,11 @@
+<!-- DjangoMadLabWebApp/templates/madlib_form.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Fill in the blanks for the MadLib</h2>
+<form method="post" action="{% url 'madlib' madlib_class=madlib_class %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+{% endblock content %}

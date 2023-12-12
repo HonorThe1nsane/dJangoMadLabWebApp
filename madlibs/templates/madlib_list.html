@@ -1,3 +1,12 @@
 <!-- DjangoMadLabWebApp/templates/madlib_list.html -->
-<h1>Mad Libs List</h1>
-<!-- Add your HTML code to display a list of Mad Libs -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Here is a list of madlibs</h2>
+<ul>
+    {% for class in classes %}
+    <li><a href="{{ class }}">{{ class }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}

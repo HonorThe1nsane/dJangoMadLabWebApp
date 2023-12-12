@@ -1,0 +1,29 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static '/style.css' %}" /> -->
+    <title>{% block title %}Madlibs made by Troy Davidson{% endblock %}</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="{% url 'hello_view' %}">MadLibs</a></h1>
+        <p></p>
+    </div>
+
+    <div id="sidebar">
+        <!-- {% block sidebar %} -->
+        <h2><a href="{% url 'madlib_list' %}">Let's play a MadLib</a></h2>
+        <!-- {% endblock %} -->
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
