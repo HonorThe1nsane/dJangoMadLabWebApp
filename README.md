@@ -5,6 +5,7 @@ Then go to http://127.0.0.1:8000/home to be able to access the web application
 I wrote this to practice using Python and dJango and create a web application.
 
 [Software Demo Video](https://youtu.be/xwKD18bITu4)
+[GitHub](https://github.com/HonorThe1nsane/dJangoMadLabWebApp.git)
 
 # Web Pages
 

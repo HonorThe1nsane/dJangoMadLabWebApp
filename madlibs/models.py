@@ -1,3 +1,4 @@
+# For now it this is not being used.
 from django.db import models
 
 class MadLib(models.Model):

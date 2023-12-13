@@ -2,8 +2,9 @@
 # StoreMadlibs.py file
 import inspect
 
-
+# Handles our one madlib for now. Eventually this will be able to store and save user created files
 class ZooMadLib:
+    # Using blanks this allows to print out what is needed to the user and store a spot in the MadLib
     def blanks(self):
         return {
             "animal": "choose a type of animal",
@@ -50,7 +51,7 @@ class ZooMadLib:
         )
         return story
 
-
+# This ended up not being needed, another tutorial was handling user input within this file and I decided not to do that here
 # if __name__ == "__main__":
 #     # First, we need to get the blanks to fill in.
 #     # Our program uses the blanks() function to determine what blanks

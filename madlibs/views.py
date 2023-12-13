@@ -11,13 +11,13 @@ from . import StoredMadlibs
 
 logging.basicConfig(filename="madlib_errors.log", level=logging.ERROR)
 
-
+#  Creates the form we need to dynamically
+# As we add user inputted stories, we need to be able to handle those
 class MadlibForm(forms.Form):
     def __init__(self, blanks, *args, **kwargs):
         super(MadlibForm, self).__init__(*args, **kwargs)
         for key in blanks:
             self.fields[key] = forms.CharField(label=blanks[key])
-
 
 def madlib_list(request):
     # Fetch the list of MadLib classes
@@ -30,44 +30,49 @@ def madlib_list(request):
     # Render the template with the list of MadLib classes
     return render(request, "madlib_list.html", {"classes": classes})
 
+# Is not needed right for now since I am not looking for stored madlibs at this point
+# def madlib_detail(request, madlib_id):
+#     madlib = MadLib.objects.get(id=madlib_id)
+#     return render(request, "madlib_detail.html", {"madlib": madlib})
 
-def madlib_detail(request, madlib_id):
-    madlib = MadLib.objects.get(id=madlib_id)
-    return render(request, "madlib_detail.html", {"madlib": madlib})
-
-
+# Just simple call to hello world and takes in the date format. 
 def hello_view(request):
     today = datetime.datetime.now().date()
     return render(request, "hello.html", {"today": today})
 
-
+#  handles the call to the home or base page 
 def home(request):
     return render(request, "base.html")
 
-
+# This handles the meat and potatoes of the program
 def madlib(request, madlib_class):
     error = {}
     try:
+        # Grabs our madlib class
         klass = getattr(StoredMadlibs, madlib_class)
         m = klass()
         blanks = m.blanks()
         story = ""
-
+        # Checks if submit request is mad
         if request.method == "POST":
             form = MadlibForm(blanks, request.POST)
-
+            # Makes sure everything is correct in the form
             if form.is_valid():
                 answers = form.cleaned_data
 
                 try:
+                    # Puts in the answers into the saved madlib
                     story = m.story(answers)
+                    # Checks for errors
                 except KeyError as ke:
                     error = {"type": "KeyError", "message": str(ke)}
                     logging.error(error)
+                    # This will call our error page and read the error that occurs
                     return render(request, "madlib-exception.html", {"error": error})
 
-                # Return the template with the story and other variables
+
                 # print("Generated Story:", story)
+                # Return the template with the story and other variables
                 return render(
                     request,
                     "madlib_form.html",
@@ -79,7 +84,7 @@ def madlib(request, madlib_class):
         else:
             form = MadlibForm(blanks=blanks)
 
-        # Return the template with the story and other variables
+        # Returns back to the original form
         return render(
             request,
             "madlib_form.html",
