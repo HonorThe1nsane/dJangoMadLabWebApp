@@ -1509,3 +1509,4 @@ django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app wi
 INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
 INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
 WARNING:django.request:Not Found: /madlibs/static/styles.css
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.

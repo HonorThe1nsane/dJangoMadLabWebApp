@@ -67,7 +67,7 @@ def madlib(request, madlib_class):
                     return render(request, "madlib-exception.html", {"error": error})
 
                 # Return the template with the story and other variables
-                print("Generated Story:", story)
+                # print("Generated Story:", story)
                 return render(
                     request,
                     "madlib_form.html",
