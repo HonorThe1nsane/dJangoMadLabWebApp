@@ -1,36 +1,35 @@
 # Overview
+This is a MadLib app that I wrote with dJango.
+To get started you will need to run the command "python manage.py runserver"
+Then go to http://127.0.0.1:8000/home to be able to access the web application
+I wrote this to practice using Python and dJango and create a web application.
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/xwKD18bITu4)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+You have one main page which is the base.html this is homebase if you want to think of it that way. Then when  you click on the first link it goes to the hello page and that was just a
+simple example of Hello World implementation I always try to do first to understand the basics. The you have the madlib_form and that allows you to fill out a madlib. For now it is only
+taking from the one madlib that is stored. Eventually I want to be able to institute a database that stores the madlibs and allows others to play them. You have the madlib_list which actually is accessed before the form. It is calling all the madlibs that are stored. Then you have the madlib-exception page which just shows you an error message if there is one.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Tools used:
+VScode
+Python
+dJango library
 
-{Describe the programming language that you used and any libraries.}
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-* [Tutoriaspoint](https://www.tutorialspoint.com/django/index.htm)
-* [Web Site Name](http://url.link.goes.here)
+* [dJango](https://docs.djangoproject.com/en/4.1/howto/static-files/)
+* [GitHub Example](https://github.com/deviantintegral/gr8-designs-madlibs.git)
+* [Tutorials Point](https://www.tutorialspoint.com/django/django_environment.html)
+* [CSS Issues Help](https://stackoverflow.com/questions/35557129/css-not-loading-wrong-mime-type-django)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-* Item 1
-* Item 2
-* Item 3
+* Integrate the stylesheet into a seperate file
+* Be able to have different users login
+* Users will be able to store their own stories
+* Sharing on social media platforms
