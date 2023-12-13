@@ -5,7 +5,133 @@
 
 <head>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'styles.css' %}" /> -->
+    <style>
+        /* Base styles */
+
+        html,
+        body {
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        /* Header */
+
+        #header {
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        #header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        #header a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #header h1 a:hover {
+            color: #0052cc;
+        }
+
+        /* Sidebar */
+
+        #sidebar {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        #sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #0052cc;
+        }
+
+        #sidebar a {
+            color: #003399;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover {
+            color: #002166;
+        }
+
+        /* Content */
+
+        #content {
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        /* Forms */
+
+        #content form {
+            margin: 20px 0;
+        }
+
+        #content form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #content form input,
+        #content form textarea {
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        #content form input:focus,
+        #content form textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        #content form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #content form input[type="submit"]:hover {
+            background-color: #0052cc;
+        }
+
+        /* MadLib story */
+
+        #content h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #0052cc;
+        }
+
+        #content p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Go back home link */
+
+        #goHome {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #goHome h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+    </style>
     <title>{% block title %}Madlibs made by Troy Davidson{% endblock %}</title>
 </head>
 
