@@ -66,25 +66,28 @@ def madlib(request, madlib_class):
                     logging.error(error)
                     return render(request, "madlib-exception.html", {"error": error})
 
+                # Return the template with the story and other variables
+                print("Generated Story:", story)
                 return render(
                     request,
-                    "madlib.html",
-                    {"story": story, "madlib_name": madlib_class, "form": form},
+                    "madlib_form.html",
+                    {"story": story, "madlib_name": madlib_class, "madlib_class": madlib_class, "form": form},
                 )
+
             else:
                 logging.error(form.errors)
-
         else:
             form = MadlibForm(blanks=blanks)
 
+        # Return the template with the story and other variables
         return render(
             request,
-            "madlib_form.html",  # Render the form template
-            {"madlib_name": madlib_class, "form": form},
+            "madlib_form.html",
+            {"madlib_class": madlib_class, "form": form},
         )
-
     except (ImportError, AttributeError, SyntaxError) as e:
         error = {"type": type(e).__name__, "message": str(e)}
         logging.error(error)
 
+    # Return the exception template with the error information
     return render(request, "madlib-exception.html", {"error": error})

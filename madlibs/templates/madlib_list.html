@@ -6,7 +6,7 @@
 <h2>Here is a list of madlibs</h2>
 <ul>
     {% for class in classes %}
-    <li><a href="{{ class }}">{{ class }}</a></li>
+    <li><a href="{% url 'madlib' madlib_class=class %}">{{ class }}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}

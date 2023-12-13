@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    /* Conservative blue color for heading */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff;
+    /* Conservative blue color for the navbar */
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    /* White text color for links */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background-color: #007bff;
+    /* Conservative blue color for buttons */
+    color: #fff;
+    /* White text color for buttons */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Darker blue color on hover */
+}

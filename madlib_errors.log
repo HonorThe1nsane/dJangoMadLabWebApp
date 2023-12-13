@@ -424,3 +424,1088 @@ Traceback (most recent call last):
   File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 80, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 80, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 80, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 80, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'hello'"}
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 80, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'YourMadlibClass'"}
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'YourMadlibClass'"}
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'hello'"}
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+ERROR:root:<ul class="errorlist"><li>animal<ul class="errorlist"><li>This field is required.</li></ul></li><li>verb past tense<ul class="errorlist"><li>This field is required.</li></ul></li><li>Noun<ul class="errorlist"><li>This field is required.</li></ul></li><li>Adjective<ul class="errorlist"><li>This field is required.</li></ul></li><li>verb<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 69, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 69, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 69, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 69, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 69, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+WARNING:django.request:Not Found: /ZooMadLib/css/style.css
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: madlib() got an unexpected keyword argument 'madlib_class'
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 70, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 70, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 70, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 70, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 70, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/StoredMadlibs.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /ZooMadLib/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 71, in madlib
+    return render(
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'madlib' with keyword arguments '{'madlib_class': ''}' not found. 1 pattern(s) tried: ['(?P<madlib_class>[^/]+)/\\Z']
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py changed, reloading.
+WARNING:django.request:Not Found: /ZooMadLib/styles.css
+WARNING:django.request:Not Found: /home/styles.css
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /css/style.css
+WARNING:django.request:Not Found: /home/style.css
+WARNING:django.request:Not Found: /home/style.css
+WARNING:django.request:Not Found: /home/templates/style.css
+WARNING:django.request:Not Found: /templates/style.css
+WARNING:django.request:Not Found: /templates/style.css
+WARNING:django.request:Not Found: /home/style.css
+WARNING:django.request:Not Found: /home/style.css
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+WARNING:django.request:Not Found: /home/style.css
+WARNING:django.request:Not Found: /home/style.css
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'style.css'"}
+WARNING:django.request:Not Found: /ZooMadLib/style.css
+WARNING:django.request:Not Found: /ZooMadLib/style.css
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+WARNING:django.request:Not Found: /styles.css/style.css
+WARNING:django.request:Not Found: /home/styles.css/
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'style.css'"}
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'style.css'"}
+WARNING:django.request:Not Found: /home/style.css
+WARNING:django.request:Not Found: /home/style.css
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+ERROR:root:{'type': 'AttributeError', 'message': "module 'madlibs.StoredMadlibs' has no attribute 'styles.css'"}
+WARNING:django.request:Not Found: /home/styles.css
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/urls.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+ERROR:django.request:Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 45, in home
+    return render(request, "base.html")
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 55, in create_storage
+    return storage_cls(**options)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/whitenoise/storage.py", line 64, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 460, in __init__
+    self.hashed_files, self.manifest_hash = self.load_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 470, in load_manifest
+    content = self.read_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 464, in read_manifest
+    with self.manifest_storage.open(self.manifest_name) as manifest:
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 68, in _open
+    return File(open(self.path(name), mode))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 39, in path
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+ERROR:django.request:Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 45, in home
+    return render(request, "base.html")
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 55, in create_storage
+    return storage_cls(**options)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/whitenoise/storage.py", line 64, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 460, in __init__
+    self.hashed_files, self.manifest_hash = self.load_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 470, in load_manifest
+    content = self.read_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 464, in read_manifest
+    with self.manifest_storage.open(self.manifest_name) as manifest:
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 68, in _open
+    return File(open(self.path(name), mode))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 39, in path
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+ERROR:django.request:Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/views.py", line 45, in home
+    return render(request, "base.html")
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/handler.py", line 55, in create_storage
+    return storage_cls(**options)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/whitenoise/storage.py", line 64, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 460, in __init__
+    self.hashed_files, self.manifest_hash = self.load_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 470, in load_manifest
+    content = self.read_manifest()
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 464, in read_manifest
+    with self.manifest_storage.open(self.manifest_name) as manifest:
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/core/files/storage/filesystem.py", line 68, in _open
+    return File(open(self.path(name), mode))
+  File "/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/venv/lib/python3.9/site-packages/django/contrib/staticfiles/storage.py", line 39, in path
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+INFO:django.utils.autoreload:/Users/troydavidson/CSE310_Projects/dJangoMadLabWebApp/madlibs/settings.py changed, reloading.
+WARNING:django.request:Not Found: /madlibs/static/styles.css

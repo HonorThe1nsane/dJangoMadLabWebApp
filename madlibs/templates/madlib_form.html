@@ -1,4 +1,3 @@
-<!-- DjangoMadLabWebApp/templates/madlib_form.html -->
 {% extends "base.html" %}
 
 {% block content %}
@@ -8,4 +7,12 @@
     {{ form.as_p }}
     <input type="submit" value="Submit">
 </form>
+{% if story %}
+    <h2>{{ madlib_name }} </h2>
+    <p>{{ story }}</p>
+{% endif %}
+
+<!-- {# Debugging output #}
+<p>Debug - madlib_class: {{ madlib_class }}</p> -->
+</div>
 {% endblock content %}
